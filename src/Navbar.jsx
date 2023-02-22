@@ -13,12 +13,16 @@ export default function Navbar(){
                 </p>
             </div>
 
-            <button className="
+            <a href="https://drive.google.com/file/d/1Fw030GC4fp3xjvq1P1kZ63KeTr6uo02f/view?usp=sharing"
+            target="_blank"
+            className="
             bg-white
             text-black
             rounded
             p-2
-            hover:bg-gray-100">View My Resume.</button>
+            inline-block
+            hover:bg-gray-200
+            hover:rotate-3">View My Resume.</a>
       </div>
     )
 }

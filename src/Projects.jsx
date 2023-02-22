@@ -1,18 +1,12 @@
 import ProjectCard from "./ProjectsCard"
+import ProjectData from "./ProjectData.json"
 
 export default function Projects() {
 
-    const demoProj = {
-        name: "Project demo name",
-        techUsed: ["HTML", "CSS", "JavaScript"],
-        img: "catcomputer.gif",
-        liveLink: "#",
-        githubLink: "#",
-        description: "Bhbvhsvbfbevh f gfrbgeyfygvb yegf; urguiwf fhgs.eg gffbvyegbf fgeygfbgbsf fgyfes,sfgey  gfyefsb."
-    }
+    const projectsArr = ProjectData.map(proj => <ProjectCard {...proj} key={proj.name} />);
     
     return (
-        <section className="col-span-1">
+        <section className="w-1/2 h-[100vh]">
             
             <h2 className="
             text-4xl
@@ -23,18 +17,16 @@ export default function Projects() {
             </h2>
 
             <div className=" 
-                h-[100vh]
                 overflow-y-scroll
                 flex flex-col gap-3
                 w-3/4
                 ml-auto
                 border-y-2
+                h-full
                 ">
-                    <ProjectCard {...demoProj} />
-                    <ProjectCard {...demoProj} />
-                    <ProjectCard {...demoProj} />
-                    <ProjectCard {...demoProj} />
-                </div>
+                    {projectsArr}
+            </div>
+            
         </section>
     )
 }

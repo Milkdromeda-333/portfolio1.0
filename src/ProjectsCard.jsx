@@ -1,10 +1,10 @@
 
 
 export default function ProjectCard(props) {
-    const { name, liveLink, githubLink, img, description, techUsed } = props;
+    const { name, liveLinkUrl, githubLink, img, description, techUsed } = props;
     return (
         <div className="
-        h-[55vh]
+        p-4
         border-b-2
         w-full
         text-lg">
@@ -27,15 +27,12 @@ export default function ProjectCard(props) {
 
                     <div className="text-black text-base">
 
-                        <button  className="bg-white rounded px-2 mr-2
-                        hover:bg-gray-100">
+                        <a href={ liveLinkUrl } target="_blank" className="bg-white rounded px-2 mr-2 inline-block hover:bg-gray-200  hover:rotate-3">
                             view live
-                        </button>
-
-                         <button className="bg-white rounded px-2
-                         hover:bg-gray-100">
+                        </a>
+                         <a href={ githubLink } target="_blank" className="bg-white rounded px-2 inline-block hover:bg-gray-200  hover:-rotate-3">
                             view github
-                        </button>
+                        </a>
                     </div>
                 </div>
 

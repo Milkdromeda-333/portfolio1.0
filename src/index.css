@@ -2,27 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* move this to tailwind */
 :root{
   --decor-font: 'Jost', sans-serif;
   --regular-font: 'DM Serif Display', serif;
 }
 
 body{
-  background-image: url(/blurry-gradient-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
   font-family: var(--regular-font);
-  color: white;
-}
-
-button:hover, .skill:hover{
-  outline: dashed red;
-  outline-offset: 4px;
-}
-
-button:not(form > button):hover{
-  transform: rotate(-5deg);
 }
 
 .header{

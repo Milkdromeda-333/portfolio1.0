@@ -19,12 +19,12 @@ function App() {
 
 
   return (
-    <div className='box-border'>
+    <div className='box-border bg-[url(/blurry-gradient-haikei.svg)] bg-no-repeat bg-cover text-white h-full'>
 
       <Navbar />
       
       {/* body */}
-      <section className='flex flex-row m-8 mb-2'>
+      <section className='flex flex-row mx-8 mt-8 pb-4'>
 
         {/* left side */}
         <div className="w-1/2 flex flex-col justify-between gap-4">
@@ -35,6 +35,7 @@ function App() {
 
         {/* right side */}
         <Projects />
+
         
       </section>
 
