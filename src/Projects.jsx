@@ -29,7 +29,6 @@ export default function Projects() {
                 w-3/4
                 ml-auto
                 border-y-2
-                border-l-2
                 ">
                     <ProjectCard {...demoProj} />
                     <ProjectCard {...demoProj} />

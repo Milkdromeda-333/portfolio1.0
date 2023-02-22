@@ -16,10 +16,12 @@ export default function Skills() {
   ]
     
     return (
-        <section className='mb-4'>
-          <h2 className='text-4xl mb-2'>My Skills. &gt;&gt;</h2>
+      <section className=''>
+        
+        <h2 className='text-4xl mb-2'>My Skills. &gt;&gt;</h2>
+        
           <ul className='grid grid-cols-3 text-2xl'>
-            {skillsArr.map(skill => <li key={skill}>{skill}</li>)}
+            {skillsArr.map(skill => <li key={skill} className='bg-white rounded-lg w-fit px-2 text-black m-2'>{skill}</li>)}
           </ul>
         </section>
     )

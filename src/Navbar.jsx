@@ -9,7 +9,7 @@ export default function Navbar(){
                 <img src="/guycomputer.gif" alt="earth logo" className='object-contain w-18' />
 
                 <p className='header'>
-                    Anjanique Mackey &gt;&gt; Web developer &gt;&gt;
+                    Anjanique Mackey, Web developer &gt;&gt;
                 </p>
             </div>
 
