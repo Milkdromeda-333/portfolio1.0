@@ -23,7 +23,7 @@ export default function ContactForm() {
             </div>
           
           <button className='bg-transparent w-full text-center border transition-all p-2
-            hover:bg-zinc-200 rounded hover:text-my-blue'>Submit.</button>
+            hover:bg-white rounded hover:text-my-blue'>Submit.</button>
           
           </form>
 

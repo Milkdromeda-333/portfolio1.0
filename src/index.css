@@ -8,13 +8,21 @@
 }
 
 body{
-  /* background-image: url(/potfolio-assets/tumblr_79160a080256b77c44f30cd6dfb75c84_1c00c593_2048.jpg); */
   background-image: url(/blurry-gradient-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   font-family: var(--regular-font);
   color: white;
+}
+
+button:hover, .skill:hover{
+  outline: dashed red;
+  outline-offset: 4px;
+}
+
+button:not(form > button):hover{
+  transform: rotate(-5deg);
 }
 
 .header{
