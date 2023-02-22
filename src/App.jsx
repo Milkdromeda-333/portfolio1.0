@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './Navbar'
 import Intro from './Intro'
 import Skills from './Skills'
@@ -9,22 +8,24 @@ function App() {
 
 
   return (
-    <div className='leading-10 grid grid-cols-2 grid-rows-auto'>
+    <div className='box-border'>
 
       <Navbar />
       
       {/* body */}
-      <div className="m-4 col-span-1">
+      <section className='flex flex-row m-8'>
 
-        <Intro />
-        <Skills />
-        <ContactForm />
+        {/* left side */}
+        <div className="w-1/2">
+          <Intro />
+          <Skills />
+          <ContactForm />
+        </div>
 
-      </div>
-
-      <Projects />
-
-      {/* footer */}
+        {/* right side */}
+        <Projects />
+        
+      </section>
 
     </div>
   )
